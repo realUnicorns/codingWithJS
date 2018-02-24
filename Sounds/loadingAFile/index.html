@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>loadingAFile</title>
+
+	<script src="libraries/p5.js"></script>
+	<script src="libraries/p5.dom.js"></script>
+	<script src="libraries/p5.sound.js"></script>
+	<script src="sketch.js"></script>
+
+	<style>
+		#stop {
+			background-color: red;
+			padding: 5px;
+		}
+
+		#play {
+			background-color: green;
+			padding: 5px;
+		}
+
+		#pause {
+			background-color: yellow;
+			padding: 5px;
+		}
+	</style>
+</head>
+
+<body>
+	<button id="play">Play</button><button id="pause">Pause</button><button id="stop">Stop</button> Volume :
+	<slider id="slider"></slider>
+</body>
+
+</html>

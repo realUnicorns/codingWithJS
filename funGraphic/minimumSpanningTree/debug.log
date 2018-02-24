@@ -1,0 +1,24 @@
+[0217/222532.642:ERROR:process_info.cc(350)] VirtualQueryEx: Access is denied. (0x5)
+[0217/222532.642:ERROR:process_info.cc(571)] ReadMemoryInfo failed
+[0217/222532.645:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0217/222532.645:ERROR:exception_snapshot_win.cc(88)] thread ID 8556 not found in process
+[0217/222532.645:WARNING:crash_report_exception_handler.cc(62)] ProcessSnapshotWin::Initialize failed
+[0217/222532.645:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0217/222748.344:ERROR:process_info.cc(350)] VirtualQueryEx: Access is denied. (0x5)
+[0217/222748.344:ERROR:process_info.cc(571)] ReadMemoryInfo failed
+[0217/222748.346:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0217/222748.352:ERROR:exception_snapshot_win.cc(88)] thread ID 7932 not found in process
+[0217/222748.352:WARNING:crash_report_exception_handler.cc(62)] ProcessSnapshotWin::Initialize failed
+[0217/222748.352:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0217/222810.545:ERROR:process_info.cc(350)] VirtualQueryEx: Access is denied. (0x5)
+[0217/222810.545:ERROR:process_info.cc(571)] ReadMemoryInfo failed
+[0217/222810.547:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0217/222810.547:ERROR:exception_snapshot_win.cc(88)] thread ID 7484 not found in process
+[0217/222810.547:WARNING:crash_report_exception_handler.cc(62)] ProcessSnapshotWin::Initialize failed
+[0217/222810.547:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0217/223152.306:ERROR:process_info.cc(350)] VirtualQueryEx: Access is denied. (0x5)
+[0217/223152.306:ERROR:process_info.cc(571)] ReadMemoryInfo failed
+[0217/223152.308:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0217/223152.308:ERROR:exception_snapshot_win.cc(88)] thread ID 11372 not found in process
+[0217/223152.308:WARNING:crash_report_exception_handler.cc(62)] ProcessSnapshotWin::Initialize failed
+[0217/223152.308:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
