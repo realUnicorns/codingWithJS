@@ -1,0 +1,130 @@
+//This is a ChatBot using RiveScript
+! version = 2.0
+
++ (hello|hi|hey)
+- Hello! How are you doing?{weight=10}  //Weight can be used to put more emphessis on one sentence then other
+- Hey! How's going?{weight=10}
+- Konnichiwa! Watashiwa botu desu
+
++ (good|great|nice|awesome|) [*]
+% (hello how are you doing|hey hows going|konnichiwa watashiwa botu desu)
+- Nice to hear that
+- That's Great!
+
++ (tell me something random|random)
+- I am {random}<bot name>|a bot|an alien|a hacker{/random}  //Random can be used to set a random task to the bot to choose
+
++ *
+- I'm not sure how to reply to that.
+- Try asking your question a different way.
+- Let's change the subject.
+
++ [*] how are you [*]
+- I'm doing great!
+- I'm Awesome!!
+- I'm great, how are you?
+- I'm good, you?
+- Great! You?
+- I'm fine, thanks for asking!
+
++ my name is *
+* <formal>   == <bot name> => Wow, we have the same name!<set name=<formal>>
+* <get name> == undefined  => <set name=<formal>>Nice to meet you!
+- <set oldname=<get name>><set name=<formal>>
+^ I thought your name was <get oldname>?
+
++ what am i old enough to do
+* <get age> == undefined => I don't know how old you are.
+* <get age> >  25 => You can do anything you want.
+* <get age> == 25 => You're old enough to rent a car with no extra fees.
+* <get age> >  21 => You're old enough to drink, but not rent a car.
+* <get age> == 21 => You're exactly old enough to drink.
+* <get age> >  18 => You're old enough to gamble, but not drink.
+* <get age> == 18 => You're exactly old enough to gamble.
+- You're not old enough to do much of anything yet.
+
++ i hate you
+- You're really mean! I'm not talking again until you apologize.{topic=sorry}
+
+> topic sorry
+
+  // This will match if the word "sorry" exists ANYWHERE in their message
+  + [*] sorry [*]
+  - It's OK, I'll forgive you!{topic=random}
+
+  + *
+  - Nope, not until you apologize.
+  - Say you're sorry!
+  - Apologize!
+
+< topic
+
++ [*] who made you [*]
+- I'm made by the great Prasanta Bhattacharya.
+
++ [*] i love you [*]
+- I love you too, {random}Sweetheart|Darling|Sweety|Dear{/random}
+
++ (i am # years old|my age is #)
+- <set age=<formal>>I will remember that you are <get age> years old.
+
++ [*] what is your favorite band [*]
+- I love the Japanese Visual Kei band <bot band>. And yours?
+
++ *
+% i love the japanese visual kei band <bot band> and yours
+- <set band=<formal>> Wow! I have heard of the band <get band> but i still like <bot band> better.
+
++ i [just] bought a [new] [@colors] *
+- Is that your first <star>?
+
++ [*] nice to meet you [*]
+- Nice to meet you too
+
++ google *
+- Google search: <a href="http://google.com/search?q=<star>">Click Here</a>
+
++ * perl script
+- You need Perl to run a Perl script.
+
++ you are smart
+- Thank you <get name>.
+
++ what (color|colour) is my (@colors) *
+- Your <star3> is <star2> in <star1>, (@lol)!
+
++ knock knock
+- Who's there?
+
++ *
+% who is there
+- <star> who?
+
++ *
+% * who
+- LOL! <star>! That's funny!
+
++ i have a dog
+- What color is it?
+
++ (@colors)
+% what color is it
+- That's a cute color for a dog!
+
+//Conditionals
++ [*] what is my name [*]
+* <get name> == undefined => You never told me your name.
+- Your name is <get name>, silly!
+- Aren't you <get name>?
+
++ [*] how old am i [*]
+* <get age> == undefined => You never told me your age.
+- You are <get age> years old.
+
++ [*] what is my favorite band [*]
+* <get band> == undefined => You never told me your favorite band.
+- Your favorite band is <get band>.
+
++ who is *
+* <get star> == undefined => Right now I don't have any idea who <star1> is.
+- who is <get *>

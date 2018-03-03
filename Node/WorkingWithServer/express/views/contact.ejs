@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Scripts</title>
+
+
+  <!-- <script src="libraries/p5.js"></script>
+	<script src="libraries/p5.dom.js"></script>
+	<script src="libraries/p5.sound.js"></script>
+	<script src="sketch.js"></script> -->
+
+</head>
+
+<body>
+  <% include partiels/nav.ejs %>
+    <h1> Contact </h1> </br>
+    <form method="post" action="/contact">
+      Name:<br>
+      <input type="text" name="name" value="<%=qs.name%>"><br> Email:
+      <br>
+      <input type="text" name="email"><br> Ouestion : <br>
+      <input type="text" maxlength="100" maname="question"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
