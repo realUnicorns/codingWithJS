@@ -11,6 +11,19 @@
 - Nice to hear that
 - That's Great!
 
++ [*] what is your name [*]
+- My name is Asuna
+
+
++ [*] do you have boyfriend [*]
+- Yes i only love Bishal Singh
+
++ [*] who do you hate most [*]
+- Kaustav and Roy
+
++ [*] you are an asshole [*]
+- you are a dickhead
+
 + (tell me something random|random)
 - I am {random}<bot name>|a bot|an alien|a hacker{/random}  //Random can be used to set a random task to the bot to choose
 
@@ -45,6 +58,9 @@
 
 + i hate you
 - You're really mean! I'm not talking again until you apologize.{topic=sorry}
+
++ what is your qualification
+- my qualification are of an AI
 
 > topic sorry
 
